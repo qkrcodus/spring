@@ -11,10 +11,14 @@
             "id": "a62165af35332fca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "스프링입문/마이크테스트.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "마이크테스트"
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "스프링입문/마이크테스트.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 마이크테스트"
             }
           },
           {
@@ -107,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "스프링입문/마이크테스트.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 마이크테스트"
             }
           },
           {
@@ -132,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "스프링입문/마이크테스트.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 마이크테스트"
             }
           }
         ]
@@ -154,8 +162,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e392be0bb9bdc6e5",
+  "active": "a62165af35332fca",
   "lastOpenFiles": [
+    "스프링입문/마이크테스트.md",
     "스프링입문",
     "Welcome.md"
   ]
