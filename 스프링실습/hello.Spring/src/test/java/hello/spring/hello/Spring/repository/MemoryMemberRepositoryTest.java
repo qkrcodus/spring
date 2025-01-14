@@ -1,4 +1,4 @@
-package repository;
+package hello.spring.hello.Spring.repository;
 import hello.spring.hello.Spring.domain.Member;
 import hello.spring.hello.Spring.repository.MemoryMemberRepository;
 import static org.assertj.core.api.Assertions.
