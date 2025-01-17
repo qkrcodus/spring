@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "스프링입문/3. 웹 mvc 개발.md",
+                "file": "스프링입문/4. 스프링 DB 접근 기술.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. 웹 mvc 개발"
+              "title": "4. 스프링 DB 접근 기술"
             }
           }
         ],
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "34c9b1c3a1f93bcd",
@@ -180,8 +179,9 @@
   },
   "active": "ab3cdb6972acf05c",
   "lastOpenFiles": [
-    "스프링입문/2. 스프링 빈과 의존 관계.md",
     "스프링입문/3. 웹 mvc 개발.md",
+    "스프링입문/4. 스프링 DB 접근 기술.md",
+    "스프링입문/2. 스프링 빈과 의존 관계.md",
     "스프링입문/1. 프로젝트 생성,  스프링 개발 기초,  회원 관리 예제.md",
     "스크린샷 2025-01-14 오후 3.34.51.png",
     "스크린샷 2025-01-12 오후 5.45.34.png",
