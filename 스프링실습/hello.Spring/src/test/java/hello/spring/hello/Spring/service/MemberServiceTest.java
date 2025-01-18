@@ -45,7 +45,7 @@ class MemberServiceTest {
         member1.setName("qkrcodus1");
 
         Member member2=new Member();
-        member1.setName("qkrcodus1");
+        member2.setName("qkrcodus1");
 
         //When
         memberService.join(member1);

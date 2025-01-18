@@ -6,16 +6,16 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
+
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
 @SpringBootTest
 @Transactional
 class MemberServiceIntegrationTest {
     @Autowired MemberService memberService;
-    @Autowired
-    MemberRepository memberRepository;
+    @Autowired MemberRepository memberRepository;
     @Test
     public void 회원가입() throws Exception {
 //Given
@@ -31,9 +31,9 @@ class MemberServiceIntegrationTest {
     public void 중복_회원_예외() throws Exception {
 //Given
         Member member1 = new Member();
-        member1.setName("springs1");
+        member1.setName("spring");
         Member member2 = new Member();
-        member2.setName("springs2");
+        member2.setName("spring");
 //When
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class,
