@@ -9,8 +9,8 @@ public class MemberApp {
 
     public static void main(String[] args) {
 
-        // memberService 만들고
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService= appConfig.memberService();
 
         // join할 객체 생성
         Member member = new Member(1L, "memberA", Grade.VIP);
@@ -22,3 +22,4 @@ public class MemberApp {
         System.out.println("find member: "+ findMember.getName());
     }
 }
+
