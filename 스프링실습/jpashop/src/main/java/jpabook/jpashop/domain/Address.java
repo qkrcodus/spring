@@ -4,7 +4,7 @@ import jakarta.persistence.Embeddable;
 import lombok.Getter;
 import lombok.Setter;
 
-@Embeddable
+@Embeddable // 여러 엔티티에서 사용 가능
 @Getter
 public class Address {
     private String street;
