@@ -3,12 +3,14 @@ package jpabook.jpashop.repository;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import jpabook.jpashop.domain.item.Item;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
 @Transactional
+@RequiredArgsConstructor
 public class ItemRepository {
     private final EntityManager em;
 
