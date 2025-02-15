@@ -30,6 +30,7 @@ public abstract class Item {
     private void addStock(int quantity) {
         this.stockQuantity += quantity;
     }
+
     private void removeStock(int quantity) {
         int resStock=this.stockQuantity -quantity;
         if(resStock<0) {
