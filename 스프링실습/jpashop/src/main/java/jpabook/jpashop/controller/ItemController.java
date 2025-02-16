@@ -61,15 +61,19 @@ public class ItemController {
     }
 
     @PostMapping("items/{itemId}/edit")
-    public String updateItem(@ModelAttribute("form") BookForm form){
-        Book book=new Book();
+    public String updateItem(@PathVariable Long itemId,@ModelAttribute("form") BookForm form){
+        // 새로운 객체이긴 하지만, id는 이미 가지고 있다. (book 은 이미 디비에 갔다 옴)
+        // jpa 에 한 번 갔다 온 book 이 준영속 엔티티다.
+        // jpa 가 더 이상 관리하지 않아서 book에 값을 바꿔도 디비에 반영 x
+   /*     Book book=new Book();
         book.setId(form.getId());
         book.setName(form.getName());
         book.setPrice(form.getPrice());
         book.setStockQuantity(form.getStockQuantity());
         book.setAuthor(form.getAuthor());
         book.setIsbn(form.getIsbn());
-        itemService.saveItem(book);
+        itemService.saveItem(book);*/
+        itemService.updateItem(itemId,form.getName(),form.getPrice(), form.getStockQuantity());
         return "redirect:/items";
     }
 
