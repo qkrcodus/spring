@@ -19,6 +19,17 @@ public class OrderRepository {
     public Order findOne(Long id) {
         return em.find(Order.class, id);
     }
+
     // 검색
+    public List<Order> findAll(OrderSearch orderSearch) {
+        
+        return em.createQuery("select o from Order o join o.member m " +
+                "where o.status = :status "+
+                "and m.name like:name ",Order.class)
+                .setParameter("status",orderSearch.getOrderStatus())
+                .setParameter("name",orderSearch.getMemberName())
+                .setMaxResults(1000)
+                .getResultList();
+    }
 }
 
