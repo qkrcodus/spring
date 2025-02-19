@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "79b02cd3a2e95702",
+            "id": "a1a26b8031cfeee3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "실전! 스프링 부트와 JPA 활용 2/1. API 개발 기본.md",
+                "file": "실전! 스프링 부트와 JPA 활용 2/2. API 개발 고급 - 준비.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. API 개발 기본"
+              "title": "2. API 개발 고급 - 준비"
             }
           }
         ]
@@ -159,9 +159,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "79b02cd3a2e95702",
+  "active": "a1a26b8031cfeee3",
   "lastOpenFiles": [
     "실전! 스프링 부트와 JPA 활용 2/1. API 개발 기본.md",
+    "실전! 스프링 부트와 JPA 활용 2/2. API 개발 고급 - 준비.md",
     "실전! 스프링 부트와 JPA 활용 1/7.  웹 계층 개발.md",
     "실전! 스프링 부트와 JPA 활용 2",
     "실전! 스프링 부트와 JPA 활용 1/0. 정리.md",
