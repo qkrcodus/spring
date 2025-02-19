@@ -9,10 +9,33 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @RestController // 데이터를 json 이나 xml 로 보내자
 @RequiredArgsConstructor
 public class MemberApiController {
     private final MemberService memberService;
+
+    @GetMapping("/api/v2/members")
+    public Result memberV2(){
+        List<Member> findMembers=memberService.findMembers();
+        List<MemberDto> collect=findMembers.stream().map(m->new MemberDto(m.getName()))
+                .collect(Collectors.toList());
+        return new Result(collect);
+    }
+
+    @Data
+    @AllArgsConstructor
+    public class Result<T> {
+        private T data;
+    }
+
+    @Data
+    @AllArgsConstructor
+    static class MemberDto{
+        private String name;
+    }
 
     @PostMapping("/api/v1/members") // 회원 등록
     public CreateMemberResponse saveMemberV1(@RequestBody @Valid Member member){
