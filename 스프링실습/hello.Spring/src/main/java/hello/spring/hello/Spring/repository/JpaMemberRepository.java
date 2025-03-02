@@ -15,7 +15,10 @@ public class JpaMemberRepository implements MemberRepository {
     }
 
     @Override
-    public Member save(Member member) {em.persist(member); return member;}
+    public Member save(Member member) {
+        em.persist(member);
+        return member;
+    }
 
     @Override
     public Optional<Member> findById(Long id){
@@ -33,6 +36,7 @@ public class JpaMemberRepository implements MemberRepository {
 
     @Override
     public List<Member> findAll() {
+
         return em.createQuery("select m from Member m", Member.class).getResultList();
     }}
 

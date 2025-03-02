@@ -28,6 +28,7 @@ public class OrderSimpleApiController {
                 .collect(Collectors.toList());
         return result;
     }
+
     @Data
     public static class SimpleOrderDto {
         private Long orderId;
